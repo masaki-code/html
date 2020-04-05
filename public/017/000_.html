@@ -6,11 +6,84 @@
 </head>
 <body>
 
-<bdi dir="rtl"></bdi>
+  <section>
+    <h2>bdi</h2>
 
-<bdo dir="rtl"></bdo>
+    <section>
+      <h3>dir="ltr"</h3>
+      <div>
+        <bdi dir="rtl">dbi rtl</bdi>
+      </div>
+    </section>
 
-<wbr>
+    <section>
+      <h3>dir="ltr"</h3>
+      <div>
+        <bdi dir="ltr">dbi ltr</bdi>
+      </div>
+
+    </section>
+
+    <section>
+      <h3>アラビア語（rtl）</h3>
+      <div>
+        <bdi dir="rtl"> مرحبا هناك test</bdi>
+      </div>
+    </section>
+
+    <section>
+      <h3>アラビア語（ltr）</h3>
+      <div>
+        <bdi dir="ltr"> مرحبا هناك test</bdi>
+      </div>
+    </section>
+
+    <section>
+      <h3>bdiの外</h3>
+      <div>
+        <bdi dir="rtl"> مرحبا هناك</bdi>test
+      </div>
+
+    </section>
+
+    <section>
+      <h3>bdiがない</h3>
+      <div>
+        مرحبا هناك test
+      </div>
+    </section>
+
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>bdo</h2>
+    <div>
+      <bdo dir="rtl">rtlを指定したbdoです。</bdo>
+    </div>
+
+    <br>
+
+    <div>
+      <bdo dir="ltr">ltrを指定したbdoです。</bdo>
+    </div>
+
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>wbr</h2>
+    <div>
+      →→→→→→→→→→wbr→→→→→→→→→→<wbr>←←←←←←←←←←wbr←←←←←←←←←←
+    </div>
+    <br>
+    <div>
+      →→→→→→→→→→br→→→→→→→→→→<br>←←←←←←←←←←br←←←←←←←←←←
+    </div>
+
+  </section>
 
 </body>
 </html>
